@@ -12,35 +12,50 @@
 
 # testing
 /coverage
+/test-results/
+/playwright-report/
 
 # next.js
 /.next/
 /.vinext/
 /out/
+/dist/
 
-# misc
+# Cloudflare / Wrangler
+/.wrangler/
+
+# local tooling and generated artifacts
+/outputs/
+/work/
+/mirror/
+/scroll-analysis-output/
+
+# editors and operating systems
+.idea/
+.vscode/
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# secrets and local certificates
 *.pem
+.dev.vars
+.dev.vars.*
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 
 # env files (can opt-in for committing if needed)
 .env*
 
 # vercel
-.vercel
+/.vercel/
 
 # typescript
 next-env.d.ts
-/dist/
-/.wrangler/
-/outputs/
-/work/
-
-# local reference mirror and visual QA captures
-/mirror/
-/scroll-analysis-output/
+*.tsbuildinfo
