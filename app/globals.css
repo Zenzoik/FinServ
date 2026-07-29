@@ -343,9 +343,31 @@ h2 {
   content: "";
 }
 
-.services-logos {
+.services-logos-wrap {
+  position: relative;
   width: min(100%, 511px);
   margin-left: auto;
+}
+
+.services-logos {
+  display: block;
+  width: 100%;
+}
+
+.diia-city-card {
+  position: absolute;
+  top: 12.8%;
+  left: 7.5%;
+  width: 23%;
+  aspect-ratio: 2;
+  transform: rotate(-14deg);
+}
+
+.diia-city-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .experience {
@@ -1078,7 +1100,7 @@ h2 {
     margin: 10px 0;
   }
 
-  .services-logos {
+  .services-logos-wrap {
     width: 100%;
   }
 

@@ -288,7 +288,12 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <img className="services-logos" src="/assets/logos.png" alt="" />
+            <div className="services-logos-wrap" aria-hidden="true">
+              <img className="services-logos" src="/assets/logos.png" alt="" />
+              <span className="diia-city-card">
+                <img src="/assets/diia-city.png" alt="" />
+              </span>
+            </div>
           </div>
         </section>
 
